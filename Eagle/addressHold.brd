@@ -80,7 +80,7 @@
 <circle x="6.35" y="152.4" radius="1.79605" width="1.016" layer="17"/>
 <circle x="93.98" y="152.4" radius="1.79605" width="1.016" layer="17"/>
 <circle x="93.98" y="3.81" radius="1.79605" width="1.016" layer="17"/>
-<text x="7.62" y="104.14" size="1.9304" layer="16" rot="MR270">12/2015 - Robin Tönniges - RegMonV2 -AdressHold</text>
+<text x="7.62" y="104.14" size="1.9304" layer="16" rot="MR270">12/2015 - Robin Tönniges - RegMonV2 -AddressHold</text>
 <text x="12.7" y="7.62" size="2.1844" layer="1">Top</text>
 <text x="21.59" y="3.81" size="2.1844" layer="16" rot="MR0">Bottom</text>
 </plain>
