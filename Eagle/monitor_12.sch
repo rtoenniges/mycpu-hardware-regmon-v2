@@ -7881,7 +7881,7 @@ Source: AVX .. aphvc.pdf</description>
 <text x="175.26" y="111.76" size="1.778" layer="91">High</text>
 <text x="175.26" y="71.12" size="1.778" layer="91">Low</text>
 <text x="175.26" y="33.02" size="1.778" layer="91">High</text>
-<text x="45.72" y="175.26" size="6.4516" layer="91">Adress Bus or Program Counter</text>
+<text x="45.72" y="175.26" size="6.4516" layer="91">Address Bus or Program Counter</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="139.7" y="139.7"/>
