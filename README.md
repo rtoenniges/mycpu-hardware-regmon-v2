@@ -4,7 +4,7 @@ A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu)
 - Values display in Hex using an EPROM to convert Binary to 7-segment
 - Hold CPU on a specific adress using DIP-Switches
 - You dont have to build the whole Monitor - Its split into 3x Driver and 2x Monitor modules
-## Registers
+### Registers
 - Accu
 - X-Reg
 - Y-Reg
