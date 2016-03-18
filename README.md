@@ -1,5 +1,9 @@
 # MyCPU_HDW_RegMonV2
 A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu) to display the various CPU internal registers.
+## Features
+- Values display in Hex using an EPROM to convert Binary to 7-segment
+- Hold CPU on a specific adress using DIP-Switches
+- You dont have to build the whole Monitor - Its split into 3x Driver and 2x Monitor modules
 ## Registers
 - Accu
 - X-Reg
@@ -11,4 +15,4 @@ A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu)
 - ALU-OUT
 - Sign-, Zero-, Carry-Flag
 - Program Counter
-- Adressregister and also a module to hold the CPU on a specific adress.
+- Adressregister
