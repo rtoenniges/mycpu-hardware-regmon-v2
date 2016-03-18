@@ -1,0 +1,19 @@
+Accu	8Bit	ID0..7(V0(5..12))	TAC(V2(8))	Accu
+X-Reg	8Bit	ID0..7(V0(5..12))	TRX(V2(10))	X-Register
+Y-Reg	8Bit	ID0..7(V0(5..12))	TRY(V2(6))	Y-Register
+StackP	8Bit	ID0..7(V0(5..12))	TSP(V2(4))	Stack-Pointer
+Temp	8Bit	ID0..7(V0(5..12))	TRP(V2(2))	Temporary Register
+
+OPC	8Bit	ID0..7(V0(5..12))	TOP(V1(11))	Operationcode
+ADR	8Bit	A0..15(V6(1..16))	-----------	Adressregister
+PCL	8Bit	PCL0..7(IC36(2..9))	ADPC(Intern)	Programcounter (Low)
+PCH	8Bit	PCH0..7(IC38(2..9))	ADPC(Intern)	Programcounter (High)
+
+AR1	8Bit	ID0..7(V0(5..12))	TAR1(V5(12))	Alu-Register 1
+AR2	8Bit	ID0..7(V0(5..12))	TAR2(V5(11))	Alu-Register 2
+ALU	8Bit	ID0..7(V0(5..12))	/OEALU(V5(9))	Alu-Ausgang
+					/OEBPALU(V5(18))
+
+FL_C	1Bit	-----------------	FL_C(V5(4))	Carry Flag
+FL_Z	1Bit	-----------------	FL_Z(V5(3))	Zero Flag
+FL_V	1Bit	-----------------	FL_V(V5(2))	Sign Flag
