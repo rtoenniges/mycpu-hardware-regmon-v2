@@ -11,5 +11,4 @@ A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu)
 - ALU-OUT
 - Sign-, Zero-, Carry-Flag
 - Program Counter
-- Adressreg
-And also a module to hold the CPU on a specific adress.
+- Adressregister and also a module to hold the CPU on a specific adress.
