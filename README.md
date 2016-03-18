@@ -1,6 +1,5 @@
 # MyCPU_HDW_RegMonV2
 A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu) to display the various CPU internal registers.
-#
 
 ## Features
 - Values display in Hex using an EPROM to convert Binary to 7-segment
