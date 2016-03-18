@@ -1,6 +1,6 @@
 # MyCPU_HDW_RegMonV2
 A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu) to display the various CPU internal registers.
-## Registers
+# Registers
 - Accu
 - X-Reg
 - Y-Reg
