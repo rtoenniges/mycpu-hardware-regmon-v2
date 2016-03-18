@@ -8054,12 +8054,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="109.22" y="167.64" size="6.4516" layer="91">Adress Bus</text>
+<text x="109.22" y="167.64" size="6.4516" layer="91">Address Bus</text>
 <text x="127" y="154.94" size="3.81" layer="91">Low</text>
 <text x="127" y="91.44" size="3.81" layer="91">High</text>
 <text x="256.54" y="152.4" size="3.81" layer="91">Low</text>
 <text x="259.08" y="81.28" size="3.81" layer="91">High</text>
-<text x="231.14" y="167.64" size="6.4516" layer="91">Hold on adress</text>
+<text x="231.14" y="167.64" size="6.4516" layer="91">Hold on address</text>
 <text x="317.5" y="88.9" size="1.778" layer="91">To A29 on Backplane bus or IC32 pin 13 on the Clock-Control Board</text>
 </plain>
 <instances>
