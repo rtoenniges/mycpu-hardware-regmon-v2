@@ -2,7 +2,8 @@
 A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu) to display the various CPU internal registers.
 
 #### Attention: 
-**This project especially the layout are not yet finished and have __never been tested!__ 
+**This project especially the layout are not yet finished and have _never been tested!_
+
 So be careful if you connect this to your MyCPU!**
 
 ## Features
