@@ -6,6 +6,7 @@ A hardware expansion for for the MyCPU from Dennis Kuschel (http://www.mycpu.eu)
 
 So be careful if you connect this to your MyCPU!**
 
+
 ## Features
 - Values display in Hex using an EPROM to convert Binary to 7-segment
 - Hold CPU on a specific address using DIP-Switches
