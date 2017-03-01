@@ -68,6 +68,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -8003,6 +8004,84 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO35-10">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 10.16 mm</description>
+<wire x1="5.08" y1="0" x2="4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="-0.762" x2="2.286" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-5.08" y="0" drill="0.8128" shape="long"/>
+<pad name="A" x="5.08" y="0" drill="0.8128" shape="long"/>
+<text x="-2.159" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.159" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
+<rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SCHOTTKY">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BAT42" prefix="D">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+ barrier diode</description>
+<gates>
+<gate name="1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO35-10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8028,8 +8107,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="CON6" library="con-ml" deviceset="ML10" device="" value="VA"/>
 <part name="CON7" library="con-ml" deviceset="ML10" device="" value="VB"/>
 <part name="CON8" library="con-ml" deviceset="ML14" device="" value="V3"/>
-<part name="IC2" library="memory-hitachi" deviceset="27C256AG" device=""/>
-<part name="IC3" library="memory-hitachi" deviceset="27C256AG" device=""/>
+<part name="IC2" library="memory-hitachi" deviceset="27C256AG" device="" value="27C256"/>
+<part name="IC3" library="memory-hitachi" deviceset="27C256AG" device="" value="27C256"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -8050,6 +8129,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SV4" library="con-ml" deviceset="ML20L" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0204/5" value="4k7"/>
+<part name="D1" library="diode" deviceset="BAT42" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8060,7 +8140,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="256.54" y="152.4" size="3.81" layer="91">Low</text>
 <text x="259.08" y="81.28" size="3.81" layer="91">High</text>
 <text x="231.14" y="167.64" size="6.4516" layer="91">Hold on address</text>
-<text x="317.5" y="88.9" size="1.778" layer="91">To A29 on Backplane bus or IC32 pin 13 on the Clock-Control Board</text>
+<text x="332.74" y="88.9" size="1.778" layer="91">To A29 on Backplane bus or IC32 pin 13 on the Clock-Control Board</text>
 </plain>
 <instances>
 <instance part="CON4" gate="1" x="17.78" y="66.04" rot="R180"/>
@@ -8090,11 +8170,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="C3" gate="G$1" x="73.66" y="30.48"/>
 <instance part="C4" gate="G$1" x="83.82" y="30.48"/>
 <instance part="IC5" gate="A" x="294.64" y="88.9"/>
-<instance part="TP1" gate="G$1" x="309.88" y="88.9" rot="R270"/>
+<instance part="TP1" gate="G$1" x="322.58" y="88.9" rot="R270"/>
 <instance part="GND1" gate="1" x="177.8" y="25.4" rot="MR0"/>
 <instance part="SV4" gate="1" x="187.96" y="40.64" rot="R180"/>
 <instance part="P+3" gate="VCC" x="177.8" y="66.04" rot="MR0"/>
 <instance part="R1" gate="G$1" x="218.44" y="45.72" rot="R90"/>
+<instance part="D1" gate="1" x="312.42" y="88.9" rot="R180"/>
 </instances>
 <busses>
 <bus name="A[0..15]">
@@ -9234,13 +9315,20 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="205.74" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="58.42" x2="223.52" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="A" pin="O"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="302.26" y1="88.9" x2="304.8" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="88.9" x2="307.34" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="7.62" x2="304.8" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="7.62" x2="304.8" y2="88.9" width="0.1524" layer="91"/>
-<junction x="304.8" y="88.9"/>
 <label x="195.58" y="53.34" size="1.778" layer="95"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="309.88" y1="88.9" x2="304.8" y2="88.9" width="0.1524" layer="91"/>
+<junction x="304.8" y="88.9"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="A"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="314.96" y1="88.9" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
