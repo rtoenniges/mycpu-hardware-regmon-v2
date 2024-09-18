@@ -1,7 +1,7 @@
 /****************************************************************************
- * This file creates the ALU-tables needed by MyCPU.
- * Author: Dennis Kuschel, K.-G.-Kiesinger-Allee 14, 28279 Bremen, Germany
+ * This file creates the EPROM file to convert binary to hex with 7-Seg.
  ****************************************************************************/
+/******** Created using Dennis Kuschel's ALUGEN.c *********/
 
 /* NOTE: This file was tested with the following compilers:
  *
